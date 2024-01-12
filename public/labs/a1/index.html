@@ -1,0 +1,194 @@
+<html>
+  <head>
+    <title>Assignment 1</title>
+  </head>
+  <body>
+    <a href="../../index.html">Back Home</a>
+    <h1>Assignment 1 - All about HTML</h1>
+
+    <h2>Forms</h2>
+
+    <form action="edit.html">
+      Username:
+      <input
+        name="username"
+        type="type"
+        title="Please enter your username"
+        placeholder="jdoe"
+        value="jannunzi"
+        readonly
+      />
+      <br />
+      <label>
+        Password:
+        <input name="password" type="password" />
+      </label>
+      <br />
+
+      Salary:
+      <input
+        name="salary"
+        value="100010"
+        max="200000"
+        min="100000"
+        type="number"
+      />
+      <br />
+
+      Date:
+      <input
+        name="dob"
+        min="2023-01-05"
+        max="2023-01-23"
+        value="2023-01-15"
+        type="date"
+      />
+      <br />
+
+      Buttons:
+      <button type="button">Click me</button>
+      <button type="reset">Clear form</button>
+      <button type="submit">Edit</button>
+
+      <h2>Radio Buttons</h2>
+      <h4>Favorite Books:</h4>
+      <br />
+      <input id="dune" type="radio" name="fav-book" value="DUNE" />
+      <label for="dune">Dune</label>
+
+      <br />
+      <div>
+        <input id="ltr" type="radio" checked name="fav-book" value="LTR" />
+        <label for="ltr">Lord of the Rings</label>
+      </div>
+      <div>
+        <label>
+          <input type="radio" name="fav-book" value="HP" />Harry Potter
+        </label>
+      </div>
+      <div><input type="radio" name="fav-book" value="SW" />Star Wars</div>
+      <h4>Favorite Genre</h4>
+      <input name="fav-genre" value="ACTION" type="checkbox" /> Action
+      <input name="fav-genre" value="COMEDY" checked type="checkbox" /> Comedy
+      <input name="fav-genre" value="DRAMA" type="checkbox" /> Drama
+      <input name="fav-genre" value="HORROR" type="checkbox" /> Horror
+      <input name="fav-genre" value="ROMANCE" type="checkbox" checked /> Romance
+
+      <h4>Favorite Books</h4>
+      <select name="fav-books">
+        <option value="DUNE">Dune</option>
+        <option value="LTR" selected>Lord of the Rings</option>
+        <option value="HP">Harry Potter</option>
+        <option value="SW">Star Wars</option>
+      </select>
+
+      <h4>Favorite genres</h4>
+      <select name="fav-genres" multiple>
+        <option value="ACTION">Action</option>
+        <option value="COMEDY" selected>Comedy</option>
+        <option value="DRAMA">Drama</option>
+        <option value="HORROR">Horror</option>
+        <option value="ROMANCE" selected>Romance</option>
+      </select>
+    </form>
+
+    <h4>Biography</h4>
+    <textarea rows="20" cols="20">
+
+
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+voluptatum, quod, quae, voluptatem quia quos voluptate quibusdam
+voluptates quas doloribus quidem. Quisquam voluptatum, quod, quae,
+voluptatem quia quos voluptate quibusdam voluptates quas doloribus
+quidem.
+      </textarea
+    >
+
+    <h2>Headings</h2>
+    <h2>Paragraphs</h2>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam</p>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab quibusdam
+      sapiente distinctio laborum, eius ea magni velit dicta repudiandae quae
+      ipsa ipsum inventore sint atque minima fugiat. Amet, laborum culpa!
+    </p>
+
+    <p>
+      Lorem ipsum, dolor
+
+      <input />
+
+      sit amet consectetur adipisicing elit. <br />
+      In, error aliquid. Obcaecati unde, reprehenderit, voluptas, sequi dolore
+      eaque quibusdam accusamus culpa sapiente accusantium voluptatem
+      perferendis ipsum tempora beatae? Eos, tempora.
+    </p>
+    <h2>Lists</h2>
+    <h3>Ordered Lists</h3>
+    <ol>
+      <li>Dune</li>
+      <li>
+        Lord of the rings
+        <ol>
+          <li>The Fellowship of the Ring</li>
+          <li>The Two Towers</li>
+          <li>The Return of the King</li>
+        </ol>
+      </li>
+      <li>Harry Potter</li>
+    </ol>
+
+    <h3>Unordered Lists</h3>
+
+    <ul>
+      <li>Red</li>
+      <li>Green</li>
+      <li>Blue</li>
+    </ul>
+
+    <h2>Tables</h2>
+
+    <table border="1" width="100%">
+      <thead>
+        <tr>
+          <th>Movie</th>
+          <th>Year</th>
+          <th>Rating</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Dune</td>
+          <td>2021</td>
+          <td rowspan="2" valign="top">PG-13</td>
+        </tr>
+        <tr>
+          <td colspan="2">Lord of the Rings</td>
+        </tr>
+        <tr>
+          <td>Harry Potter</td>
+          <td>2001</td>
+          <td rowspan="2" valign="top">PG</td>
+        </tr>
+        <tr>
+          <td>Star Wars</td>
+          <td>1977</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Image tag</h2>
+
+    Loading an image from the internet:<br />
+
+    <img
+      width="100%"
+      src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg"
+    />
+
+    <br />
+  </body>
+</html>
