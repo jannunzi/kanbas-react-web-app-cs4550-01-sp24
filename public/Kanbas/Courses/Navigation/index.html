@@ -1,11 +1,34 @@
-<ul>
-  <li>
-    <a href="/Kanbas/Courses/Home/screen.html"> Home</a>
-  </li>
-  <li><a href="/Kanbas/Courses/Modules/screen.html"> Modules</a></li>
-  <li><a href="/Kanbas/Courses/Piazza/index.html"> Piazza</a></li>
-  <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
-  <li>
-    <a href="/Kanbas/Courses/Assignments/screen.html"> Assignments</a>
-  </li>
-</ul>
+<script>
+  function CourseNavigation() {
+    const links = [
+      {
+        name: "Home",
+        url: "/Kanbas/Courses/Home/screen.html",
+      },
+      {
+        name: "Modules",
+        url: "/Kanbas/Courses/Modules/screen.html",
+      },
+      {
+        name: "Piazza",
+        url: "/Kanbas/Courses/Piazza/index.html",
+      },
+      {
+        name: "Grades",
+        url: "/Kanbas/Courses/Grades/screen.html",
+      },
+      {
+        name: "Assignments",
+        url: "/Kanbas/Courses/Assignments/screen.html",
+      },
+    ];
+    document.write(`
+    <ul>
+      ${links
+        .map((link) => `<li><a href="${link.url}"> ${link.name}</a></li>`)
+        .join("")}
+    </ul>
+  `);
+  }
+  CourseNavigation();
+</script>
