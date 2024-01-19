@@ -1,1 +1,157 @@
-<h1>Editor</h1>
+<html>
+  <head></head>
+  <body>
+    <table width="100%">
+      <tbody>
+        <tr>
+          <td valign="top">
+            <ul>
+              <li>
+                <a href="/Kanbas/Account/Navigation/index.html"> Account</a>
+              </li>
+              <li>
+                <a href="/Kanbas/Dashboard/screen.html">Dashboard</a>
+              </li>
+              <li>
+                <a href="/Kanbas/Courses/Home/screen.html">Courses</a>
+              </li>
+              <li>
+                <a href="/Kanbas/Calendar/index.html">Calendar</a>
+              </li>
+              <li><a href="/Kanbas/Inbox/index.html">Inbox</a></li>
+            </ul>
+          </td>
+          <td valign="top">
+            <ul>
+              <li>
+                <a href="/Kanbas/Courses/Home/screen.html"> Home</a>
+              </li>
+              <li>
+                <a href="/Kanbas/Courses/Modules/screen.html"> Modules</a>
+              </li>
+              <li><a href="/Kanbas/Courses/Piazza/index.html"> Piazza</a></li>
+              <li><a href="/Kanbas/Courses/Grades/screen.html"> Grades</a></li>
+              <li>
+                <a href="/Kanbas/Courses/Assignments/screen.html">
+                  Assignments</a
+                >
+              </li>
+            </ul>
+          </td>
+          <td valign="top">
+            <form action="/Kanbas/Courses/Assignments/screen.html">
+              <label>Assignment Name</label><br />
+              <input
+                type="text"
+                name="wd-assignment-name"
+                value="Assignment 1"
+              /><br />
+
+              <label>Assignment Description</label><br />
+              <textarea name="wd-assignment-description" rows="4" cols="50">
+              This is the first assignment for Web Dev.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ipsum laudantium veniam optio, dicta quas voluptas facilis alias laborum voluptatibus maiores ducimus dolorem molestiae labore, harum rerum? Quis, quam vitae!
+            </textarea
+              ><br />
+              <table>
+                <tbody>
+                  <tr>
+                    <td><label>Points</label></td>
+                    <td>
+                      <input type="number" value="100" min="0" max="100" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label>Assignment Group</label></td>
+                    <td>
+                      <select>
+                        <option>ASSIGNMENT</option>
+                        <option>QUIZ</option>
+                        <option>EXAM</option>
+                        <option>PROJECT</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td valign="top"><label>Submission Type</label></td>
+                    <td>
+                      <input
+                        type="checkbox"
+                        name="wd-submission-type"
+                        value="TEXT"
+                        checked
+                      />
+                      <label>Text Entry</label> <br />
+                      <input
+                        type="checkbox"
+                        name="wd-submission-type"
+                        value="WEBSITE"
+                      />
+                      <label>Website URL</label> <br />
+                      <input
+                        type="checkbox"
+                        name="wd-submission-type"
+                        value="MEDIA"
+                      />
+                      <label>Media Recordings</label> <br />
+                      <input
+                        type="checkbox"
+                        name="wd-submission-type"
+                        value="FILE"
+                        checked
+                      />
+                      <label>File Uploads</label> <br />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label>Asign</label></td>
+                    <td>
+                      Due:<br />
+                      <input
+                        type="date"
+                        name="wd-assignment-due-date"
+                        min="2023-01-05"
+                        max="2023-01-23"
+                        value="2023-01-15"
+                      /><br />
+                      Available from:<br />
+                      <input
+                        type="date"
+                        name="wd-assignment-available-date"
+                        min="2023-01-05"
+                        max="2023-01-23"
+                        value="2023-01-15"
+                      /><br />
+                      Available unitl:<br />
+                      <input
+                        type="date"
+                        name="wd-assignment-available-until-date"
+                        min="2023-01-05"
+                        max="2023-01-23"
+                        value="2023-01-15"
+                      /><br />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label></label></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><label></label></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><label></label></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <button>Cancel</button>
+              <button>Save</button>
+            </form>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
