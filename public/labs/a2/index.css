@@ -118,3 +118,16 @@ p {
   top: 20px;
   left: 120px;
 }
+
+.wd-flex-row-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.wd-flex-grow-1 {
+  flex-grow: 1;
+}
+
+.wd-width-85px {
+  width: 85px;
+}
