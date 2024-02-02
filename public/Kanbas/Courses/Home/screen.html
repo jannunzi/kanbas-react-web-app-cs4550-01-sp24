@@ -4,8 +4,73 @@
     <link rel="stylesheet" href="/Kanbas/styles.css" />
     <link rel="stylesheet" href="/Kanbas/Navigation/index.css" />
     <link rel="stylesheet" href="/Kanbas/Courses/Navigation/index.css" />
+    <link rel="stylesheet" href="/Kanbas/Courses/Modules/index.css" />
   </head>
   <body>
+    <div class="d-block d-md-none">
+      <nav
+        class="navbar bg-dark border-bottom border-body"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
     <div class="d-flex">
       <div class="d-none d-md-block">
         <ul class="wd-kanbas-navigation">
@@ -39,29 +104,51 @@
           </li>
         </ul>
       </div>
-      <div class="">
-        <button>Collapse All</button>
-        <button>View Progress</button>
+      <div class="" style="flex-grow: 1">
+        <button class="btn btn-primary">Collapse All</button>
+        <button class="btn btn-warning">View Progress</button>
         <select>
           <option>Publish All</option>
           <option>Publish All Modules and Items</option>
           <option>Publish Modules only</option>
           <option>UnPublish All Modules</option>
         </select>
-        <button>+ Module</button>
-        <ul>
-          <li>
-            Week 1
-            <ul>
-              <li>Learning Objectives</li>
-              <li>Introduction to the course</li>
-              <li>Learn what is Web Development</li>
+        <button class="btn btn-danger">+ Module</button>
+        <ul class="list-group m-2 wd-modules">
+          <li class="list-group-item">
+            <div>
+              Week 1
+              <span class="float-end">
+                <button class="btn btn-primary">Ok</button>
+                <button class="btn btn-success">+</button>
+                <button class="btn btn-danger">x</button>
+              </span>
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item">Learning Objectives</li>
+              <li class="list-group-item">Introduction to the course</li>
+              <li class="list-group-item">Learn what is Web Development</li>
+              <li class="list-group-item">Learning Objectives</li>
+              <li class="list-group-item">Introduction to the course</li>
+              <li class="list-group-item">Learn what is Web Development</li>
             </ul>
           </li>
-          <li>
-            Week 2
-            <ul>
-              <li>Learning Objectives</li>
+          <li class="list-group-item">
+            <div>
+              Week 2
+              <span class="float-end">
+                <button class="btn btn-primary">Ok</button>
+                <button class="btn btn-success">+</button>
+                <button class="btn btn-danger">x</button>
+              </span>
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item">Learning Objectives</li>
+              <li class="list-group-item">Introduction to the course</li>
+              <li class="list-group-item">Learn what is Web Development</li>
+              <li class="list-group-item">Learning Objectives</li>
+              <li class="list-group-item">Introduction to the course</li>
+              <li class="list-group-item">Learn what is Web Development</li>
             </ul>
           </li>
         </ul>
