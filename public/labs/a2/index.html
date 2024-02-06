@@ -1,8 +1,258 @@
 <html>
-  <head> </head>
+  <head>
+    <link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="./index.css" />
+    <style></style>
+  </head>
   <body>
-    <a href="../../index.html">Back Home</a>
+    <div class="container-fluid">
+      <a href="../../index.html">Back Home</a>
 
-    <h1>Assignment 2</h1>
+      <h1 class="wd-fg-red">Assignment 2</h1>
+
+      <h2>Bootstrap Grids</h2>
+
+      <div class="row">
+        <div class="d-none d-md-block col-md-2 col-xl-1 wd-bg-color-yellow">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+          exercitationem sint quo voluptate hic unde cupiditate quis a aperiam
+          neque? Excepturi quidem asperiores odit nesciunt maxime porro quos
+          eveniet recusandae?
+        </div>
+        <div class="col-12 col-md-10 col-lg-8 wd-bg-color-blue">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+          exercitationem sint quo voluptate hic unde cupiditate quis a aperiam
+          neque? Excepturi quidem asperiores odit nesciunt maxime porro quos
+          eveniet recusandae?
+        </div>
+        <div class="d-none d-lg-block col-lg-2 col-xl-3 wd-bg-color-red">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores
+          exercitationem sint quo voluptate hic unde cupiditate quis a aperiam
+          neque? Excepturi quidem asperiores odit nesciunt maxime porro quos
+          eveniet recusandae?
+        </div>
+      </div>
+
+      <h2>Flex</h2>
+      <div class="wd-flex-row-container">
+        <div class="wd-bg-color-yellow wd-width-85px">Column 1</div>
+        <div class="wd-bg-color-blue">Column 2</div>
+        <div class="wd-bg-color-red wd-flex-grow-1">Column 3</div>
+      </div>
+
+      <h2>Style Attribute</h2>
+
+      <p id="par-1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere saepe
+        itaque dolore, deleniti neque magni alias, quidem quae obcaecati
+        consequatur tempora explicabo ex amet nisi repudiandae eligendi,
+        corrupti accusamus aspernatur. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Corrupti accusamus dolorum reiciendis ullam laborum
+        nisi iure quam? Quaerat, molestiae laborum delectus sit id libero amet
+        rerum. Tempora, voluptatibus adipisci. Iste!
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere saepe
+        itaque dolore, deleniti neque magni alias, quidem quae obcaecati
+        consequatur tempora explicabo ex amet nisi repudiandae eligendi,
+        corrupti accusamus aspernatur. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Corrupti accusamus dolorum reiciendis ullam laborum
+        nisi iure quam? Quaerat, molestiae laborum delectus sit id libero amet
+        rerum. Tempora, voluptatibus adipisci. Iste!
+      </p>
+
+      <h3 class="wd-class-selector">Class selectors</h3>
+      <div class="wd-class-selector">
+        Instead of using IDs to refer to elements, you can use an element's
+        CLASS attribute
+      </div>
+      <h4 class="wd-class-selector">
+        This heading has same style as paragraph above
+      </h4>
+
+      <div class="wd-selector-1">
+        <h3>Document structure selectors</h3>
+        <div class="wd-selector-2">
+          <div class="wd-border-example">
+            Selectors can be combined to refer elements in particular places in
+            the document
+          </div>
+          <p class="wd-selector-3">
+            This paragraph's red background is referenced as
+            <br />.selector-2 .selector3<br />
+            meaning the descendant of some ancestor.
+            <br />
+            <span class="wd-selector-4"
+              >Whereas this span is a direct child of its parent</span
+            >
+            <br />
+            You can combine these relationships to create specific styles
+            depending on the document structure
+          </p>
+        </div>
+      </div>
+      <h2>Colors</h2>
+      <h3 class="wd-fg-color-blue">Foreground color</h3>
+      <p class="wd-fg-color-red">
+        The text in this paragraph is red but
+        <span class="wd-fg-color-green">this text is green</span>
+      </p>
+      <h2>Dimension</h2>
+      <div>
+        <div class="wd-bg-color-yellow wd-dimension-portrait">Portrait</div>
+        <div class="wd-dimension-landscape wd-bg-color-blue wd-fg-color-white">
+          Landscape
+        </div>
+        <div class="wd-dimension-square wd-bg-color-red">Square</div>
+      </div>
+
+      <h2>Position</h2>
+      <h3>Relative</h3>
+      <div>
+        <div class="wd-bg-color-yellow wd-dimension-portrait">
+          <div class="wd-pos-relative-nudge-down-right">Portrait</div>
+        </div>
+        <div
+          class="wd-pos-relative-nudge-up-right wd-bg-color-blue wd-fg-color-white wd-dimension-landscape"
+        >
+          Landscape
+        </div>
+        <div class="wd-bg-color-red wd-dimension-square">Square</div>
+      </div>
+
+      <h3>Absolute position</h3>
+      <div class="wd-pos-relative wd-bg-color-beige">
+        <div
+          class="wd-pos-absolute-10-10 wd-bg-color-yellow wd-dimension-portrait"
+        >
+          Portrait
+        </div>
+        <div
+          class="wd-pos-absolute-50-50 wd-bg-color-blue wd-fg-color-white wd-dimension-landscape"
+        >
+          Landscape
+        </div>
+        <div class="wd-pos-absolute-120-20 wd-bg-color-red wd-dimension-square">
+          Square
+        </div>
+      </div>
+      <br /><br /><br /><br /><br /><br /><br />
+      <h3>Float</h3>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo maiores
+        aliquid non dolore corporis placeat. Sunt quaerat iure, inventore libero
+        officia consequuntur facere tempore reprehenderit dolores. Magnam ad
+        reiciendis ipsa. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Error sequi nisi dicta expedita? Labore incidunt adipisci soluta
+        eveniet ipsam architecto blanditiis doloribus omnis atque animi fugit
+        illo, Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+        maiores aliquid non dolore corporis placeat. Sunt quaerat iure,
+        inventore libero officia consequuntur facere tempore reprehenderit
+        dolores. Magnam ad reiciendis ipsa. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Error sequi nisi dicta expedita? Labore
+        incidunt adipisci soluta eveniet ipsam architecto blanditiis doloribus
+        omnis atque animi fugit illo, Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Nemo maiores aliquid non dolore corporis placeat. Sunt
+        quaerat iure, inventore libero officia consequuntur facere tempore
+        reprehenderit dolores. Magnam ad reiciendis ipsa. Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Error sequi nisi dicta expedita?
+        Labore incidunt adipisci soluta eveniet ipsam architecto blanditiis
+        doloribus omnis atque animi fugit illo, repellat maxime! Suscipit! Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Error
+        <img
+          style="float: left"
+          height="200px"
+          src="https://fastly.picsum.photos/id/742/200/300.jpg?hmac=sHIMP5dqRR6HpQIp-okFHEfCF2qUo8G3_cq7DuFoCRw"
+        />
+        <img
+          style="float: left"
+          height="200px"
+          src="https://fastly.picsum.photos/id/742/200/300.jpg?hmac=sHIMP5dqRR6HpQIp-okFHEfCF2qUo8G3_cq7DuFoCRw"
+        />
+        <img
+          style="float: left"
+          height="200px"
+          src="https://fastly.picsum.photos/id/742/200/300.jpg?hmac=sHIMP5dqRR6HpQIp-okFHEfCF2qUo8G3_cq7DuFoCRw"
+        />
+        <img
+          style="float: left"
+          height="200px"
+          src="https://fastly.picsum.photos/id/742/200/300.jpg?hmac=sHIMP5dqRR6HpQIp-okFHEfCF2qUo8G3_cq7DuFoCRw"
+        />
+        sequi nisi dicta expedita? Labore incidunt adipisci soluta eveniet ipsam
+        architecto blanditiis doloribus omnis atque animi fugit illo, repellat
+        maxime! Suscipit! Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Error sequi nisi dicta expedita? Labore incidunt adipisci soluta
+        eveniet ipsam architecto blanditiis doloribus omnis atque animi fugit
+        illo, repellat maxime! Suscipit! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Error sequi nisi dicta expedita? Labore incidunt
+        adipisci soluta eveniet ipsam architecto blanditiis doloribus omnis
+        atque animi fugit illo, repellat maxime! Suscipit! Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Error sequi nisi dicta expedita?
+        Labore incidunt adipisci soluta eveniet ipsam architecto blanditiis
+        doloribus omnis atque animi fugit illo, repellat maxime! Suscipit! Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Error sequi nisi
+        dicta expedita?
+        <img
+          style="float: right"
+          height="200px"
+          src="https://fastly.picsum.photos/id/742/200/300.jpg?hmac=sHIMP5dqRR6HpQIp-okFHEfCF2qUo8G3_cq7DuFoCRw"
+        />
+        Labore incidunt adipisci soluta eveniet ipsam architecto blanditiis
+        doloribus omnis atque animi fugit illo, repellat maxime! Suscipit! Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Error sequi nisi
+        dicta expedita? Labore incidunt adipisci soluta eveniet ipsam architecto
+        blanditiis doloribus omnis atque animi fugit illo, repellat maxime!
+        Suscipit! Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Deserunt non, cupiditate odio, quia provident aut, tempore nesciunt
+        eligendi ducimus id quaerat dolorem doloremque? Debitis exercitationem
+        asperiores neque atque qui praesentium! Suscipit! Lorem ipsum dolor sit
+        amet consectetur adipisicing elit. Deserunt non, cupiditate odio, quia
+        provident aut, tempore nesciunt eligendi ducimus id quaerat dolorem
+        doloremque? Debitis exercitationem asperiores neque atque qui
+        praesentium! Suscipit! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Deserunt non, cupiditate odio, quia provident aut,
+        tempore nesciunt eligendi ducimus id quaerat dolorem doloremque? Debitis
+        exercitationem asperiores neque atque qui praesentium! Suscipit! Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Deserunt non,
+        cupiditate odio, quia provident aut, tempore nesciunt eligendi ducimus
+        id quaerat dolorem doloremque? Debitis exercitationem asperiores neque
+        atque qui praesentium! Suscipit! Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Deserunt non, cupiditate odio, quia provident aut,
+        tempore nesciunt eligendi ducimus id quaerat dolorem doloremque? Debitis
+        exercitationem asperiores neque atque qui praesentium! Suscipit! Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Deserunt non,
+        cupiditate odio, quia provident aut, tempore nesciunt eligendi ducimus
+        id quaerat dolorem doloremque? Debitis exercitationem asperiores neque
+        atque qui praesentium!
+      </p>
+
+      <div class="wd-bg-color-yellow" style="width: 20%; float: left">
+        <ul>
+          <li>Account</li>
+          <li>Dashboard</li>
+          <li>Courses</li>
+          <li>Calendar</li>
+        </ul>
+      </div>
+      <div
+        style="width: 80%; float: left"
+        class="wd-bg-color-blue wd-fg-color-white"
+      >
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima sequi
+        suscipit, magni reiciendis dolorem ipsam repudiandae. Officiis
+        temporibus cumque eius reprehenderit, laboriosam possimus iusto, laborum
+        ullam vel officia dignissimos expedita. Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Minima sequi suscipit, magni reiciendis
+        dolorem ipsam repudiandae. Officiis temporibus cumque eius
+        reprehenderit, laboriosam possimus iusto, laborum ullam vel officia
+        dignissimos expedita. Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Minima sequi suscipit, magni reiciendis dolorem ipsam repudiandae.
+        Officiis temporibus cumque eius reprehenderit, laboriosam possimus
+        iusto, laborum ullam vel officia dignissimos expedita.
+      </div>
+    </div>
   </body>
 </html>

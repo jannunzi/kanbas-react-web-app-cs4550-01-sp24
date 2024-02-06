@@ -1,82 +1,168 @@
-<label>Assignment Name</label><br />
-<input type="text" name="wd-assignment-name" value="Assignment 1" /><br />
+<link rel="stylesheet" href="/libs/bootstrap/bootstrap.min.css" />
 
-<label>Assignment Description</label><br />
-<textarea name="wd-assignment-description" rows="4" cols="50">
+<div class="container-fluid">
+  <label>Assignment Name</label>
+  <input
+    class="form-control"
+    type="text"
+    name="wd-assignment-name"
+    value="Assignment 1"
+  /><br />
+
+  <label>Assignment Description</label><br />
+  <textarea
+    class="form-control"
+    name="wd-assignment-description"
+    rows="4"
+    cols="50"
+  >
   This is the first assignment for Web Dev.
   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa ipsum laudantium veniam optio, dicta quas voluptas facilis alias laborum voluptatibus maiores ducimus dolorem molestiae labore, harum rerum? Quis, quam vitae!
 </textarea
-><br />
-<table>
-  <tbody>
-    <tr>
-      <td><label>Points</label></td>
-      <td><input type="number" value="100" min="0" max="100" /></td>
-    </tr>
-    <tr>
-      <td><label>Assignment Group</label></td>
-      <td>
-        <select>
+  ><br />
+
+  <div>
+    <div class="row mb-3">
+      <label for="points" class="text-sm-end col-sm-4 col-form-label"
+        >Points</label
+      >
+      <div class="col-sm-8">
+        <input
+          id="points"
+          type="number"
+          class="form-control"
+          value="100"
+          min="0"
+          max="100"
+        />
+      </div>
+    </div>
+    <div class="row mb-3">
+      <label for="inputPassword3" class="text-sm-end col-sm-4 col-form-label"
+        >Assignment Group</label
+      >
+      <div class="col-sm-8">
+        <select class="form-control">
           <option>ASSIGNMENT</option>
           <option>QUIZ</option>
           <option>EXAM</option>
           <option>PROJECT</option>
         </select>
-      </td>
-    </tr>
-    <tr>
-      <td valign="top"><label>Submission Type</label></td>
-      <td>
-        <input type="checkbox" name="wd-submission-type" value="TEXT" checked />
-        <label>Text Entry</label> <br />
-        <input type="checkbox" name="wd-submission-type" value="WEBSITE" />
-        <label>Website URL</label> <br />
-        <input type="checkbox" name="wd-submission-type" value="MEDIA" />
-        <label>Media Recordings</label> <br />
-        <input type="checkbox" name="wd-submission-type" value="FILE" checked />
-        <label>File Uploads</label> <br />
-      </td>
-    </tr>
-    <tr>
-      <td><label>Asign</label></td>
-      <td>
-        Due:<br />
-        <input
-          type="date"
-          name="wd-assignment-due-date"
-          min="2023-01-05"
-          max="2023-01-23"
-          value="2023-01-15"
-        /><br />
-        Available from:<br />
-        <input
-          type="date"
-          name="wd-assignment-available-date"
-          min="2023-01-05"
-          max="2023-01-23"
-          value="2023-01-15"
-        /><br />
-        Available unitl:<br />
-        <input
-          type="date"
-          name="wd-assignment-available-until-date"
-          min="2023-01-05"
-          max="2023-01-23"
-          value="2023-01-15"
-        /><br />
-      </td>
-    </tr>
-    <tr>
-      <td><label></label></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><label></label></td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><label></label></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+      </div>
+    </div>
+    <fieldset class="row mb-3">
+      <legend class="col-form-label col-sm-4 pt-0 text-sm-end">
+        Submission Type
+      </legend>
+      <div class="col-sm-8">
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="gridRadios"
+            id="gridRadios1"
+            value="option1"
+            checked
+          />
+          <label class="form-check-label" for="gridRadios1"> Text Entry </label>
+        </div>
+        <div class="form-check">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="gridRadios"
+            id="gridRadios2"
+            value="option2"
+          />
+          <label class="form-check-label" for="gridRadios2">
+            Website URL
+          </label>
+        </div>
+        <div class="form-check disabled">
+          <input
+            class="form-check-input"
+            type="radio"
+            name="gridRadios"
+            id="gridRadios3"
+            value="option3"
+            disabled
+          />
+          <label class="form-check-label" for="gridRadios3">
+            Media Recordings
+          </label>
+        </div>
+      </div>
+    </fieldset>
+
+    <button type="submit" class="btn btn-primary">Sign in</button>
+  </div>
+
+  <table>
+    <tbody>
+      <tr>
+        <td valign="top"><label>Submission Type</label></td>
+        <td>
+          <input
+            type="checkbox"
+            name="wd-submission-type"
+            value="TEXT"
+            checked
+          />
+          <label>Text Entry</label> <br />
+          <input type="checkbox" name="wd-submission-type" value="WEBSITE" />
+          <label>Website URL</label> <br />
+          <input type="checkbox" name="wd-submission-type" value="MEDIA" />
+          <label>Media Recordings</label> <br />
+          <input
+            type="checkbox"
+            name="wd-submission-type"
+            value="FILE"
+            checked
+          />
+          <label>File Uploads</label> <br />
+        </td>
+      </tr>
+      <tr>
+        <td><label>Asign</label></td>
+        <td>
+          Due:<br />
+          <input
+            type="date"
+            name="wd-assignment-due-date"
+            min="2023-01-05"
+            max="2023-01-23"
+            value="2023-01-15"
+          /><br />
+          Available from:<br />
+          <input
+            type="date"
+            name="wd-assignment-available-date"
+            min="2023-01-05"
+            max="2023-01-23"
+            value="2023-01-15"
+          /><br />
+          Available unitl:<br />
+          <input
+            type="date"
+            name="wd-assignment-available-until-date"
+            min="2023-01-05"
+            max="2023-01-23"
+            value="2023-01-15"
+          /><br />
+        </td>
+      </tr>
+      <tr>
+        <td><label></label></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><label></label></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><label></label></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,133 @@
+p#par-1 {
+  color: green;
+  background-color: red;
+}
+
+/* p {
+  color: red;
+}
+
+p {
+  color: yellow;
+  background-color: rgb(25, 0, 255);
+} */
+
+.wd-class-selector {
+  color: red;
+}
+
+.wd-fg-red {
+  color: red;
+}
+
+.wd-selector-1 .wd-selector-3 {
+  background-color: red;
+  color: white;
+}
+.wd-selector-2 > .wd-selector-3 > .wd-selector-4 {
+  background-color: yellow;
+  color: blue;
+}
+
+.wd-fg-color-black {
+  color: black;
+}
+.wd-fg-color-white {
+  color: white;
+}
+.wd-fg-color-blue {
+  color: #7070ff;
+}
+.wd-fg-color-red {
+  color: #ff7070;
+}
+.wd-fg-color-green {
+  color: green;
+}
+
+.wd-bg-color-yellow {
+  background-color: #ffff07;
+}
+.wd-bg-color-blue {
+  background-color: #7070ff;
+}
+.wd-bg-color-red {
+  background-color: #ff7070;
+}
+.wd-bg-color-green {
+  background-color: green;
+}
+.wd-bg-color-beige {
+  background-color: beige;
+  height: 400px;
+  width: 100%;
+}
+
+.wd-border-example {
+  margin-right: 56px;
+  background-color: yellow;
+  margin-top: 100px;
+  border-bottom: 10px green solid;
+  border-top: 20px red dotted;
+  border-left-color: blue;
+  border-left-width: 30px;
+  border-left-style: dashed;
+}
+
+.wd-dimension-portrait {
+  width: 75px;
+  height: 100px;
+}
+
+.wd-dimension-landscape {
+  width: 100px;
+  height: 75px;
+}
+
+.wd-dimension-square {
+  width: 75px;
+  height: 75px;
+}
+
+.wd-pos-relative-nudge-up-right {
+  position: relative;
+  bottom: 30px;
+  left: 30px;
+}
+.wd-pos-relative-nudge-down-right {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+.wd-pos-relative {
+  position: relative;
+}
+
+.wd-pos-absolute-10-10 {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+.wd-pos-absolute-50-50 {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+.wd-pos-absolute-120-20 {
+  position: absolute;
+  top: 20px;
+  left: 120px;
+}
+
+.wd-flex-row-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.wd-flex-grow-1 {
+  flex-grow: 1;
+}
+
+.wd-width-85px {
+  width: 85px;
+}
