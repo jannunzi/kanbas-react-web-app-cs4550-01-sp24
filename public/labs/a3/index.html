@@ -1,0 +1,17 @@
+<h1>Assignment 3</h1>
+<h2 id="intro">Intro to JavaScript</h2>
+<script>
+  document.write("<h3>Hello World!</h3>");
+  const todoList = ["Learn JavaScript", "Learn React", "Build a project"];
+  document.write("<h3>Todo:</h3>");
+
+  document.write("<ul>");
+  for (let i = 0; i < todoList.length; i++) {
+    document.write("<li>" + todoList[i] + "</li>");
+  }
+  document.write("</ul>");
+
+  const intro = document.getElementById("intro");
+
+  intro.style.color = "blue";
+</script>
