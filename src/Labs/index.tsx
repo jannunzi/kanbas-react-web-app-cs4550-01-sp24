@@ -1,11 +1,14 @@
+import Assignment3 from "./a3";
+import Assignment4 from "./a4";
+import Assignment5 from "./a5";
+
 function Labs() {
   return (
     <div>
       <h1>Labs</h1>
-      <h2>Assignment 3</h2>
-      <h3>Exercise 3.1</h3>
-      <h2>Assignment 4</h2>
-      <h2>Assignment 5</h2>
+      <Assignment3 />
+      <Assignment4 />
+      <Assignment5 />
     </div>
   );
 }
