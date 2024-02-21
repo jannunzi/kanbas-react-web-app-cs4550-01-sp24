@@ -11,6 +11,9 @@ function KanbasNavigator() {
             <Link to={`/Kanbas/${link}`}>{link}</Link>
           </li>
         ))}
+        <li>
+          <Link to="/Labs">Labs</Link>
+        </li>
       </ul>
     </>
   );

@@ -10,7 +10,6 @@ function App() {
   return (
     <>
       <HashRouter>
-        <Nav />
         <Routes>
           <Route path="/" element={<Navigate to="/Labs" />} />
           <Route path="/Labs/*" element={<Labs />} />
